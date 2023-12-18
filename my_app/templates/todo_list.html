@@ -1,0 +1,14 @@
+<!-- todo_list.html -->
+<html style="background-color: black; color: white;">
+<head>
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <ul>
+        {% for task, completed in todos %}
+            <li>{{ task }} - {% if completed %}Completed{% else %}Not Completed{% endif %}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
